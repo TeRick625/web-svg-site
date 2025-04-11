@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Fourth<span>Project</span></h1>
+      <p class="subtitle">Исследуйте эволюцию JavaScript-фреймворков</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card animate-slide-up">
+      <div class="row">
+        <div class="graph-col">
+          <h2>Эффективность фреймворков по годам</h2>
+          <div id="profit"></div>
+        </div>
+        <div class="text-col">
+          <h3>Управление аспектами</h3>
+          <p>Выберите аспект для просмотра статистики:</p>
+          <div class="aspect-buttons">
+            <button class="btn active" data-aspect="performance">Производительность</button>
+            <button class="btn" data-aspect="complexity">Сложность</button>
+            <button class="btn" data-aspect="popularity">Популярность</button>
+          </div>
+          <div id="aspect-info" class="aspect-info">
+            <p id="info-text">React в 2025 году демонстрирует производительность 92 благодаря оптимизациям SSR. <a href="#">State of JS 2025</a></p>
+            <p id="additional-info">Дополнительно: Компонентная архитектура React идеальна для сложных интерфейсов.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card animate-slide-up">
+      <div class="row">
+        <div class="graph-col">
+          <h2>Распределение фреймворков</h2>
+          <div id="grade"></div>
+        </div>
+        <div class="text-col">
+          <h3>Настройка категорий</h3>
+          <p>Выберите область применения:</p>
+          <select id="category-select" class="select">
+            <option value="default">Общее использование</option>
+            <option value="frontend">Frontend</option>
+            <option value="fullstack">Full-Stack</option>
+          </select>
+          <div id="grade-info" class="aspect-info">
+            <p id="grade-text">React доминирует в общем использовании с долей 45%. <a href="#">State of JS 2025</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card animate-slide-up">
+      <h2>Тренды популярности фреймворков</h2>
+      <div id="earning"></div>
+      <div class="text-block">
+        <h3>Диапазон времени</h3>
+        <p>Настройте период анализа популярности фреймворков.</p>
+        <input type="range" id="time-range" min="3" max="10" value="10" class="slider">
+        <span id="range-value">10 лет</span>
+        <div class="aspect-info">
+          <p>Данные показывают рост популярности фреймворков с 2016 по 2025 год. <a href="#">npm Trends 2025</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fourth Project | Powered by Patalakha Arseniy</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
